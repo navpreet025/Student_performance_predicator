@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .result-box {
+            display: inline-block;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background: #f9f9f9;
+        }
+        h2 { color: #333; }
+        p { font-size: 20px; }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background: #007BFF;
+            color: white;
+            border-radius: 6px;
+        }
+        a:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h2>📊 Predicted Student Performance:</h2>
+        <p><b>{{ prediction }}</b></p>
+        <p>Score: {{ score }}</p>
+        <a href="/">🔙 Try Again</a>
+    </div>
+</body>
+</html>

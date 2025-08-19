@@ -1,0 +1,56 @@
+<form method="post" action="/predict">
+    <label>Study hours per day:</label>
+    <select name="study_hours">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10+</option>
+    </select>
+    <br><br>
+
+    <label>Sleep hours per day:</label>
+    <select name="sleep_hours">
+        <option value="4">Less than 4</option>
+        <option value="5">4–6</option>
+        <option value="7">6–8</option>
+        <option value="9">More than 8</option>
+    </select>
+    <br><br>
+
+    <label>Participation in class:</label>
+    <input type="radio" name="participation" value="3"> Low
+    <input type="radio" name="participation" value="6"> Medium
+    <input type="radio" name="participation" value="9"> High
+    <br><br>
+
+    <label>Extracurricular activities:</label>
+    <select name="activities">
+        <option value="0">None</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3+</option>
+    </select>
+    <br><br>
+
+    <label>Internet usage hours per day:</label>
+    <select name="internet_usage">
+        <option value="1">Less than 2</option>
+        <option value="3">2–4</option>
+        <option value="5">4–6</option>
+        <option value="7">More than 6</option>
+    </select>
+    <br><br>
+
+    <label>Motivation level (1–10):</label>
+    <input type="range" name="motivation" min="1" max="10" step="1">
+    <br><br>
+
+    <button type="submit">Predict</button>
+</form>
